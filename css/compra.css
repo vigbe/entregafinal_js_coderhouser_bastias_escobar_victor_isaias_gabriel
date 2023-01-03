@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+}
+body main {
+  background-color:#388bd8;
+}
+a href{
+  text-decoration: none;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+nav {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 10%;
+}
+.navbar {
+  list-style-type: none;
+  overflow: hidden;
+  background:#65d838;
+  background: linear-gradient(176deg, #6e90ab 32%, #16d4d4 100%);
+
+
+}
+.barra {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#catalogoProductos {
+  width: 80vw;
+  margin-top: 10px;
+  margin-left: 45px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+/* muestra catalogo o lo oculta */
+#modal-abrir {
+  border: none;
+  color: black;
+  font-size: 30px;
+  margin-left: 70vw;
+  width: 20vw;
+  background-color: white;
+}
+
+#modal-abrir:hover {
+  cursor: pointer;
+  color: #5e809a;
+}
+
+.cartaPdto {
+  max-width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-shadow: 2px 6px 3px 3px #0000004d;
+}
+.cartaPdto img {
+  width: 100%;
+  height: 200px;
+}
+.modal-contenedor {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: #00000066;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in;
+}
+.modal-active {
+  visibility: visible;
+  opacity: 1;
+}
+.modal-carrito {
+  position: relative;
+  background-color: rgb(130, 154, 172);
+  min-width: 600px;
+  border-radius: 5px;
+  padding: 22px;
+}
+.resumenCompra{
+  border: none;
+  color: black;
+  font-size: 15px;
+  width: 20vw;
+  background-color: white;
+  text-decoration: none;
+  
+}
+#img2{
+  width: 30px;
+  height: 30px;
+}
+#modal-cerrar {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  border: none;
+  background-color: rgb(130, 154, 172);
+}
+
+.boton-agregar {
+  border: none;
+  background-color: rgb(51, 68, 80);
+  color: white;
+  padding: 5px;
+}
+.itemCarrito {
+  display: flex;
+  justify-content: space-between;
+  border-top: solid grey;
+}
+.boton-eliminar {
+  border: none;
+  color: red;
+  background-color: rgb(130, 154, 172);
+}
+.boton-agregar-c {
+  border: none;
+  color: green;
+  background-color: #829aac;
+}
+#tipoProductoes {
+  margin: 20px;
+}
+
+footer {
+  padding: 5px;
+  max-height: 30%;
+  background: #516d83;
+  background: linear-gradient(
+    176deg,
+    #516d83 32%,
+    #b8baba 100%
+  );
+}

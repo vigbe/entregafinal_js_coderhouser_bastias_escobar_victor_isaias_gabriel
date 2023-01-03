@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/pago.css">
+            <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+                crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/e939ecd126.js" crossorigin="anonymous"></script>
+    <script defer src="./js/pago.js"></script>
+    <title>Pago-VIBA Servicios Tecnologicos</title>
+</head>
+<body>
+            <header>
+                <nav>
+                <ul class="navbar">
+                    <li><a class="barra" href="./index.html">Inicio</a></li>
+                    <li><a class="barra" href="./catalogo.html">Catalogo</a></li>
+                    <li><a class="barra" href="./compra.html">Compra</a></li>
+                    <li><a class="barra" href="./contacto.html">Contacto</a></li>
+                    <li><a class="barra" href="./pago.html">Pago</a></li>
+                </ul>
+                <h1>Resumen de Compra</h1>
+            </nav>
+        </header>
+        <main>
+
+            <div class="resCompra">
+                <h4>Haciendo crecer mi negocio</h4>
+                <div id="resServicio" class="container mb-4"></div>
+                <div class="totalRes">
+                    <h3><p id="totalRes"></p></h3>
+                    <button class="pagar" onclick=finalizarPagoMP()>finalizar pago</button>
+                </div>
+                <section class="sec-1">
+
+                    <p>Complete formulario de los encargados a contactar</p>
+                    <button id="ingDatos">Ingrese Datos</button>
+
+        
+                    <form id="datosEncargado" class ="datosEncargado">
+                        <input id="datoNombre" type="text" autocomplete="off" placeholder="Nombre">
+                        <input id="datoApellido" type="text" autocomplete="off" placeholder="Apellido">
+                        <input id="datoEdad" type="number" autocomplete="off" placeholder="Edad" required>
+                        <input id="datoDni" type="number" autocomplete="off" placeholder="rut" required>
+                        <p>
+                            <label for="dateIda">
+                                <span>Disponible para implementar compra desde</span>
+                                <strong><abbr title="required">*</abbr></strong>
+                            </label>
+                            <input type="date" id="date" name="expiration">
+                        </p>
+                        <p>
+                            <label for="dateHasta">
+                                <span>Debe estar implementado como fecha tope</span>
+                                <strong><abbr title="required">:</abbr></strong>
+                            </label>
+                            <input type="date" id="date" name="expiration">
+                        </p>
+                    
+                        <input id="btn" type="submit">
+                        <h3 id="rtaDatosIng" class="rtaDatosIng">Datos enviados Con Exito</h3>
+                        <h3 id="faltaDatos" class="faltaDatos">faltan Datos</h3>
+                    </form>
+                </section>
+    
+    
+            </div>
+        </main>
+
+
+
+
+            
+            
+            
+            
+</body>
+<footer class="bg-dark text-center text-white foot1">
+
+    <div class="container p-4 pb-0">
+        <!-- media -->
+        <section class="mb-4">
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com" target="_blank" role="button"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com" target="_blank" role="button"><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com" target="_blank" role="button"><i class="fab fa-instagram"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com" target="_blank" role="button"><i class="fab fa-linkedin"></i></a>
+            
+        </section>
+
+</footer>
+</html>
+

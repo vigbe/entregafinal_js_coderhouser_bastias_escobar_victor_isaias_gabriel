@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+body{
+    background-image: linear-gradient(
+    to bottom,
+    #388bd8,
+    #e7dbdb
+    ),
+    url("../img/ibiza.jpg");
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+
+}
+nav{
+    text-align: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    height: 10%;
+}
+.navbar {
+    list-style-type: none;
+    overflow: hidden;
+    background:#65d838;
+    background: linear-gradient(176deg, #6e90ab 32%, #16d4d4 100%);
+
+
+}
+.barra {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/*registracion usuaRIO*/
+#registrar{
+    background-color: rgb(81,109,131);
+    width: 80vw;
+    margin: 5vw 0vw 5vw 40vw;
+    padding: 10px;
+    display:flex;
+    flex-direction:column;
+    width: 500px;
+    border-radius: 10px;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+input{
+    margin: 20px;
+}
+
+.invalido{
+    border:red solid 2px;
+    color:red;
+    background-color: lightcoral;
+}
+
+.valido{
+    border: green solid 2px;
+    color:green;
+    background-color: lightgreen;
+}
+/* .invalido{
+    border:red solid 2px;
+    color:red;
+}
+
+.valido{
+    border: green solid 2px;
+    color:green;
+} */
+
+#respuesta{
+
+    visibility:hidden,
+}
+
+footer {
+    padding: 8vh;
+    max-height: 5vh;
+    background: #516d83;
+    background: linear-gradient(
+    176deg,
+    #516d83 32%,
+    #b8baba 100%
+    );
+    position:relative;
+}

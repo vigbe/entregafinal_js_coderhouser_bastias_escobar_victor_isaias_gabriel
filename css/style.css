@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color:#388bd8;
+
+}
+
+/*Menu Navagacion*/
+nav {
+    text-align: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    height: 10%;
+}
+
+.navbar {
+    list-style-type: none;
+    overflow: hidden;
+    background: #65d838;
+    background: linear-gradient(176deg, #516d83 32%, #b8baba 100%);
+
+
+}
+
+.barra {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+/*Pequeño Grid Consulta Clima*/
+main {
+    width: 99vw;
+    background-color: #405477;
+}
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    max-height: 30vh;
+}
+
+.consultaClima {
+    padding-left: 30px;
+    height: 28vh;
+    font-size: 1rem;
+    background: linear-gradient(176deg, #516d83 32%, #b8baba 100%);
+    border-radius: 5px;
+}
+
+
+
+.tempActual {
+    background-image:
+        linear-gradient(to bottom,
+            #f5f6fc18,
+            #eee8e893),
+        url("../img/wheather.jpg");
+    
+    background-position: center;
+    height: 28vh;
+    border-radius: 5px;
+    display: block;
+    align-items: flex-end;
+    padding: 20px;
+    text-align: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+
+.buscarProducto {
+    background: #00000099;
+    color: #445770;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.buscarProducto a {
+    text-decoration: none;
+    color: #b8baba;
+
+}
+
+.buscarProducto h2 {
+    padding-left: 120px;
+
+}
+
+.buscarProducto h3 {
+    color: #516d83;
+    padding-left: 150px;
+    font-size: 1.5rem;
+
+}
+
+.espacio {
+    background-color: aliceblue;
+    height: 8vh;
+}
+
+/*Galeria*/
+.galeria {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 300px);
+}
+
+.img-card {
+    overflow: hidden;
+}
+
+.img-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.img-card img:hover {
+    transform: scale(1.5);
+    ;
+}
+
+/** Modal **/
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #000000;
+    background-color: #000000e6;
+}
+
+.modal .lists {
+    width: 95%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 150px);
+
+}
+
+.modal .lists img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+
+}
+
+#modalImg {
+    width: 50%;
+    display: block;
+    margin: auto;
+    max-width: 700px;
+}
+
+.cierreImg {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/** Animcacion zoom **/
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+
+footer {
+    height: 10vh;
+    background: rgb(81, 109, 131);
+    background: linear-gradient(342deg, #516d83 32%, #b8baba 100%);
+    ;
+}
